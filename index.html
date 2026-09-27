@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description"
+            content="Abdulrahman Amr — .NET & Full-Stack Developer">
+        <title>Abdulrahman Amr | Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <a href="#main" class="skip">Skip to content</a>
+        <div class="code-rain" id="codeRain" aria-hidden="true"></div>
+        <canvas id="particles" aria-hidden="true"></canvas>
+
+        <!-- NAV -->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <div class="nav__in wrap">
+                <a href="#" class="nav__logo glitch">abd<em>o</em>.amr</a>
+                <ul class="nav__links" id="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav__right">
+                    <button class="tm-tog" id="themeTog"
+                        aria-label="Toggle theme">&#9728;</button>
+                    <button class="ham" id="ham" aria-label="Menu"
+                        aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero wrap" id="hero">
+            <div class="hero__txt">
+                <div class="hero__badge"><i></i> Available for
+                    Opportunities</div>
+                <h1 class="hero__name">Abdulrahman<span>Amr Sayed</span></h1>
+                <p class="hero__role">.NET &amp; Full-Stack Developer | C#
+                    &bull; ASP.NET Core &bull; Web APIs</p>
+                <p class="hero__desc">I build scalable backend systems with
+                    clean architecture and modern frontend experiences. Focused
+                    on writing code that actually works in production.</p>
+                <div class="hero__btns">
+                    <a href="#projects" class="btn btn-p">View My Work
+                        &#8595;</a>
+                    <a href="#contact" class="btn btn-g">Let's Talk &#8594;</a>
+                </div>
+            </div>
+            <div class="hero__img">
+                <div class="hero__img-bg"></div>
+                <img src="profile.jpg" alt="Abdulrahman Amr Sayed"
+                    class="hero__photo" loading="eager">
+                <div class="orbit"
+                    style="width:380px;height:380px;top:50%;left:50%;margin-top:-190px;margin-left:-190px;animation-duration:25s"></div>
+                <div class="orbit"
+                    style="width:440px;height:440px;top:50%;left:50%;margin-top:-220px;margin-left:-220px;animation-duration:35s;animation-direction:reverse"></div>
+            </div>
+            <div class="hero__scroll">
+                <span>Scroll down</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <span><em>C#</em> &mdash; ASP.NET Core &mdash; EF Core &mdash;
+                    SQL Server &mdash; <em>REST APIs</em> &mdash; Clean
+                    Architecture &mdash; JavaScript &mdash; <em>Bootstrap</em>
+                    &mdash; Git &mdash; Python &mdash; <em>SOLID</em> &mdash;
+                    OOP &mdash; Data Structures &nbsp;&nbsp;&nbsp;</span>
+                <span><em>C#</em> &mdash; ASP.NET Core &mdash; EF Core &mdash;
+                    SQL Server &mdash; <em>REST APIs</em> &mdash; Clean
+                    Architecture &mdash; JavaScript &mdash; <em>Bootstrap</em>
+                    &mdash; Git &mdash; Python &mdash; <em>SOLID</em> &mdash;
+                    OOP &mdash; Data Structures &nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+
+        <main id="main">
+
+            <!-- ABOUT -->
+            <section id="about" class="wrap">
+                <div class="s-tag rv">// about me</div>
+                <h2 class="s-title rv">Who I Am</h2>
+                <div class="about__grid">
+                    <div class="about__txt rv">
+                        <p>Computer Science student with an AI major at
+                            Beni-Suef National University. I don't just write
+                            code &mdash; I engineer solutions. My focus is on
+                            .NET backend systems: RESTful APIs, clean
+                            architecture, and building data layers that don't
+                            break at 2 AM.</p>
+                        <p>I've trained at ITI, DEPI, and Creativa. Currently
+                            interning at Simple Solutions where I work on
+                            real-world ASP.NET Core apps alongside senior devs
+                            who don't accept sloppy code.</p>
+                        <p>I care about structure, readability, and building
+                            things that last. If your codebase needs someone who
+                            respects SOLID principles and actually writes tests,
+                            we should talk.</p>
+                    </div>
+                    <div class="about__cards">
+                        <div class="a-card rv rv-d1">
+                            <div class="a-card__lbl">Education</div>
+                            <div class="a-card__val">BSc Computer Science
+                                &mdash; AI Major</div>
+                            <div class="a-card__sub">Beni-Suef National
+                                University &middot; 2023 &ndash; Present</div>
+                        </div>
+                        <div class="a-card rv rv-d2">
+                            <div class="a-card__lbl">Location</div>
+                            <div class="a-card__val">Ihwa, Beni Suef,
+                                Egypt</div>
+                        </div>
+                        <div class="a-card rv rv-d3">
+                            <div class="a-card__lbl">Core Focus</div>
+                            <div class="a-card__val">.NET Backend &middot; Clean
+                                Architecture &middot; APIs</div>
+                        </div>
+                        <div class="a-card rv rv-d4">
+                            <div class="a-card__lbl">Certification</div>
+                            <div class="a-card__val">HCIA-AI &mdash; Huawei ICT
+                                Academy</div>
+                            <div class="a-card__sub">Aug 2024 &ndash; Oct
+                                2024</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="sep">
+
+            <!-- EXPERIENCE -->
+            <section id="experience" class="wrap">
+                <div class="s-tag rv">// experience</div>
+                <h2 class="s-title rv">Where I've Been</h2>
+                <p class="s-desc rv">Not just theory &mdash; real training, real
+                    projects, real deadlines.</p>
+                <div class="tl">
+                    <div class="tl__item rv">
+                        <div class="tl__date">Nov 2025 &ndash; Present</div>
+                        <div class="tl__role">.NET Developer Intern</div>
+                        <div class="tl__org">Simple Solutions</div>
+                        <div class="tl__desc">Building production ASP.NET Core
+                            apps. Working with senior engineers on client
+                            projects using clean architecture patterns and code
+                            review workflows.</div>
+                    </div>
+                    <div class="tl__item rv">
+                        <div class="tl__date">Nov 2025 &ndash; May 2026</div>
+                        <div class="tl__role">Full Stack .NET Track</div>
+                        <div class="tl__org">DEPI &mdash; Digital Egypt Pioneers
+                            Initiative</div>
+                        <div class="tl__desc">6-month intensive covering C#,
+                            ASP.NET Core Web API, EF Core, SQL Server, and
+                            frontend integration. Shipped team projects under
+                            pressure.</div>
+                    </div>
+                    <div class="tl__item rv">
+                        <div class="tl__date">Aug 2025 &ndash; Sep 2025</div>
+                        <div class="tl__role">Web Development using .NET</div>
+                        <div class="tl__org">ITI &mdash; Information Technology
+                            Institute</div>
+                        <div class="tl__desc">.NET web fundamentals, MVC
+                            architecture, server-side rendering with Razor
+                            pages.</div>
+                    </div>
+                    <div class="tl__item rv">
+                        <div class="tl__date">Mar 2025 &ndash; Apr 2025</div>
+                        <div class="tl__role">Front-End Development</div>
+                        <div class="tl__org">Creativa</div>
+                        <div class="tl__desc">HTML5, CSS3, JavaScript
+                            fundamentals. Responsive design, Bootstrap layouts,
+                            cross-browser compatibility.</div>
+                    </div>
+                    <div class="tl__item rv">
+                        <div class="tl__date">Aug 2024 &ndash; Oct 2024</div>
+                        <div class="tl__role">HCIA-AI Certification</div>
+                        <div class="tl__org">Huawei ICT Academy</div>
+                        <div class="tl__desc">AI fundamentals &mdash; ML
+                            algorithms, deep learning basics, data analysis
+                            pipelines.</div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="sep">
+
+            <!-- SKILLS -->
+            <section id="skills" class="wrap">
+                <div class="s-tag rv">// skills</div>
+                <h2 class="s-title rv">What I Work With</h2>
+                <p class="s-desc rv">No fluff. These are the tools I actually
+                    use.</p>
+                <div class="sk__grid">
+                    <div class="sk-cat rv">
+                        <div class="sk-cat__hd">
+                            <span class="sk-cat__icon">&#9881;</span>
+                            <span class="sk-cat__nm">Backend &mdash; .NET</span>
+                        </div>
+                        <div class="sk-cat__tags">
+                            <span class="tag">C#</span><span class="tag">ASP.NET
+                                Core</span><span class="tag">RESTful
+                                APIs</span><span class="tag">EF Core</span><span
+                                class="tag">LINQ</span><span class="tag">SQL
+                                Server</span><span class="tag">JWT
+                                Auth</span><span class="tag">SOLID</span>
+                        </div>
+                    </div>
+                    <div class="sk-cat rv rv-d1">
+                        <div class="sk-cat__hd">
+                            <span class="sk-cat__icon">&#9670;</span>
+                            <span class="sk-cat__nm">Frontend</span>
+                        </div>
+                        <div class="sk-cat__tags">
+                            <span class="tag">HTML5</span><span
+                                class="tag">CSS3</span><span
+                                class="tag">JavaScript</span><span
+                                class="tag">Bootstrap</span><span
+                                class="tag">Responsive UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="sk-cat rv rv-d2">
+                        <div class="sk-cat__hd">
+                            <span class="sk-cat__icon">&#9673;</span>
+                            <span class="sk-cat__nm">AI &amp; Core CS</span>
+                        </div>
+                        <div class="sk-cat__tags">
+                            <span class="tag">Python</span><span
+                                class="tag">Machine Learning</span><span
+                                class="tag">Data Analysis</span><span
+                                class="tag">OOP</span><span class="tag">Data
+                                Structures</span>
+                        </div>
+                    </div>
+                    <div class="sk-cat rv rv-d3">
+                        <div class="sk-cat__hd">
+                            <span class="sk-cat__icon">&#11043;</span>
+                            <span class="sk-cat__nm">Tools &amp; Workflow</span>
+                        </div>
+                        <div class="sk-cat__tags">
+                            <span class="tag">Git</span><span
+                                class="tag">GitHub</span><span class="tag">VS
+                                Code</span><span class="tag">Visual
+                                Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="sep">
+
+            <!-- PROJECTS -->
+            <section id="projects" class="wrap">
+                <div class="s-tag rv">// projects</div>
+                <h2 class="s-title rv">Things I've Built</h2>
+                <p class="s-desc rv">Real applications, real problems, real
+                    solutions.</p>
+                <div class="pj__grid">
+
+                    <article class="pj-card rv">
+                        <div class="pj-card__top"></div>
+                        <div class="pj-card__body">
+                            <div class="pj-card__num">01 / TEAM PROJECT</div>
+                            <h3 class="pj-card__title">Wasl &mdash;
+                                Transportation Platform</h3>
+                            <p class="pj-card__desc">A phased transportation
+                                management platform built collaboratively. Full
+                                MVC architecture with EF Core migrations, data
+                                seeding, Fluent API configurations, and
+                                structured controller/view layers for
+                                multi-phase delivery workflows.</p>
+                            <div class="pj-card__stack">
+                                <span class="tag">ASP.NET Core MVC</span><span
+                                    class="tag">EF Core</span><span
+                                    class="tag">SQL Server</span><span
+                                    class="tag">Fluent API</span><span
+                                    class="tag">Migrations</span><span
+                                    class="tag">Seed Data</span>
+                            </div>
+                            <a href="https://github.com/abdoamr99/WaslPhases"
+                                target="_blank" rel="noopener noreferrer"
+                                class="pj-card__link">
+                                <svg viewBox="0 0 16 16"
+                                    fill="currentColor"><path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" /></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="pj-card rv rv-d1">
+                        <div class="pj-card__top"></div>
+                        <div class="pj-card__body">
+                            <div class="pj-card__num">02 / SOLO PROJECT</div>
+                            <h3 class="pj-card__title">E-Commerce Web
+                                Platform</h3>
+                            <p class="pj-card__desc">Scalable e-commerce backend
+                                &mdash; product catalogs, order management, user
+                                auth with JWT, role-based access control. Clean
+                                architecture with separated concerns and a
+                                proper API layer.</p>
+                            <div class="pj-card__stack">
+                                <span class="tag">ASP.NET Core API</span><span
+                                    class="tag">EF Core</span><span
+                                    class="tag">SQL Server</span><span
+                                    class="tag">Clean Architecture</span><span
+                                    class="tag">JWT</span>
+                            </div>
+                            <a href="https://github.com/abdoamr99"
+                                target="_blank" rel="noopener noreferrer"
+                                class="pj-card__link">
+                                <svg viewBox="0 0 16 16"
+                                    fill="currentColor"><path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" /></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="pj-card rv rv-d2">
+                        <div class="pj-card__top"></div>
+                        <div class="pj-card__body">
+                            <div class="pj-card__num">03 / SOLO PROJECT</div>
+                            <h3 class="pj-card__title">Student Record
+                                System</h3>
+                            <p class="pj-card__desc">Full CRUD for student data
+                                management. REST API backend with a responsive
+                                Bootstrap frontend. Search, filter, pagination
+                                &mdash; the works.</p>
+                            <div class="pj-card__stack">
+                                <span class="tag">ASP.NET Core</span><span
+                                    class="tag">REST APIs</span><span
+                                    class="tag">CRUD</span><span
+                                    class="tag">Bootstrap</span><span
+                                    class="tag">Responsive UI</span>
+                            </div>
+                            <a href="https://github.com/abdoamr99"
+                                target="_blank" rel="noopener noreferrer"
+                                class="pj-card__link">
+                                <svg viewBox="0 0 16 16"
+                                    fill="currentColor"><path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" /></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="pj-card rv rv-d3">
+                        <div class="pj-card__top"></div>
+                        <div class="pj-card__body">
+                            <div class="pj-card__num">04 / SOLO PROJECT</div>
+                            <h3 class="pj-card__title">Expense &amp; Financial
+                                Tracker</h3>
+                            <p class="pj-card__desc">Personal finance app
+                                &mdash; secure auth, expense categorization,
+                                income tracking, and dynamic reporting
+                                dashboards. Built with EF Core for data
+                                persistence.</p>
+                            <div class="pj-card__stack">
+                                <span class="tag">ASP.NET Core</span><span
+                                    class="tag">Authentication</span><span
+                                    class="tag">EF Core</span><span
+                                    class="tag">Reporting</span><span
+                                    class="tag">SQL Server</span>
+                            </div>
+                            <a href="https://github.com/abdoamr99"
+                                target="_blank" rel="noopener noreferrer"
+                                class="pj-card__link">
+                                <svg viewBox="0 0 16 16"
+                                    fill="currentColor"><path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" /></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <hr class="sep">
+
+            <!-- CONTACT -->
+            <section id="contact" class="wrap">
+                <div class="s-tag rv">// contact</div>
+                <h2 class="s-title rv">Get In Touch</h2>
+                <p class="s-desc rv">Got a project, opportunity, or just wanna
+                    say hey? I'm all ears.</p>
+                <div class="ct__grid">
+                    <div class="ct__info rv">
+                        <div class="ct__item">
+                            <div class="ct__item-icon">&#9993;</div>
+                            <div>
+                                <div class="ct__item-lbl">Email</div>
+                                <div class="ct__item-val"><a
+                                        href="mailto:Abdo.Amr712003@gmail.com">Abdo.Amr712003@gmail.com</a></div>
+                            </div>
+                        </div>
+                        <div class="ct__item">
+                            <div class="ct__item-icon">in</div>
+                            <div>
+                                <div class="ct__item-lbl">LinkedIn</div>
+                                <div class="ct__item-val"><a
+                                        href="https://www.linkedin.com/in/abdo-amr-a712005c/"
+                                        target="_blank"
+                                        rel="noopener">linkedin.com/in/abdo-amr</a></div>
+                            </div>
+                        </div>
+                        <div class="ct__item">
+                            <div class="ct__item-icon">GH</div>
+                            <div>
+                                <div class="ct__item-lbl">GitHub</div>
+                                <div class="ct__item-val"><a
+                                        href="https://github.com/abdoamr99"
+                                        target="_blank"
+                                        rel="noopener">github.com/abdoamr99</a></div>
+                            </div>
+                        </div>
+                        <div class="ct__item">
+                            <div class="ct__item-icon">&#9742;</div>
+                            <div>
+                                <div class="ct__item-lbl">Phone</div>
+                                <div class="ct__item-val"><a
+                                        href="tel:012892086760">012892086760</a>
+                                    / <a
+                                        href="tel:01287555673">01287555673</a></div>
+                            </div>
+                        </div>
+                        <div class="ct__item">
+                            <div class="ct__item-icon">&#9678;</div>
+                            <div>
+                                <div class="ct__item-lbl">Location</div>
+                                <div class="ct__item-val">Ihwa, Beni Suef,
+                                    Egypt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form rv" id="cForm" novalidate>
+                        <div class="form__grp">
+                            <label for="nm" class="form__lbl">Name</label>
+                            <input type="text" id="nm" class="form__inp"
+                                placeholder="Your name" autocomplete="name"
+                                required>
+                            <span class="form__err" id="nmE"></span>
+                        </div>
+                        <div class="form__grp">
+                            <label for="em" class="form__lbl">Email</label>
+                            <input type="email" id="em" class="form__inp"
+                                placeholder="you@example.com"
+                                autocomplete="email" required>
+                            <span class="form__err" id="emE"></span>
+                        </div>
+                        <div class="form__grp">
+                            <label for="msg" class="form__lbl">Message</label>
+                            <textarea id="msg" class="form__ta"
+                                placeholder="What's on your mind?"
+                                required></textarea>
+                            <span class="form__err" id="msgE"></span>
+                        </div>
+                        <button type="submit" class="btn btn-p">Send It
+                            &#8594;</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="wrap">
+                <p class="footer__txt">&copy; 2026 Abdulrahman Amr Sayed &mdash;
+                    crafted with <em>purpose</em>.</p>
+            </div>
+        </footer>
+
+        <div class="toast" id="toast" role="alert" aria-live="polite">&#10003;
+            Message sent! I'll get back to you.</div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
